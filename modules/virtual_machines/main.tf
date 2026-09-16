@@ -103,3 +103,7 @@ resource "azurerm_linux_virtual_machine" "backend_vm" {
     azurerm_network_interface.backend_nic
   ]
 }
+resource "azurerm_resource_group" "test-rg" {
+  name = test-rg1
+  location = "East US"
+}
